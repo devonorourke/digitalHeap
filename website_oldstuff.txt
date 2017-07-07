@@ -1,0 +1,150 @@
+## place in: devonorourke.github.io/_posts/2017-06-12-thankyouopensource.md
+
+---
+layout: post
+title: "Thank You, Open Source"
+date: 2017-06-12
+---
+
+After three attempts, two credit cards, and a bunch of mistakes, I finally figured out how to get a website up and running. And I owe all of the successes to free information and tools, a.k.a. open-source.
+
+
+## place in: devonorourke.github.io/about/index.html
+
+---
+layout: default
+title: about Devon...
+---
+
+<div class="inner content">
+  <h1>about me...</h1>
+  <p>The basic bio thread is as follows:<br>
+    -> Like most Canadians, I grew up loving hockey<br> 
+    --> Hockey allowed me to study at a tremendous college (go <a href="https://www.williams.edu/" target="_blank">Ephs!</a>)<br> 
+    ---> That was where I met my amazing wife (preordained? <a href="http://collegehockeystats.net/0506/teamstats/wilw" target="_blank">she</a> and <a href="http://collegehockeystats.net/0506/teamstats/wilm" target="_blank">I</a> both wore number 10. Note her excess of penalty minutes...)<br> 
+    ----> After graduating from college we started our careers teaching in a few boarding schools. Dr. Burch and <a href="http://www.berkshireschool.org/academics/signature-programs/" target="_blank">her program</a> at Berkshire School remains a huge inspiration.<br> 
+    -----> I wanted to know more about science so I signed up for a Ph.D program, starting with Vaughn Cooper's <a href="http://micropopbio.org/" target="_blank">lab</a>, and am currently completing my dissertation research in Jeff Foster's <a href="http://fozlab.weebly.com/" target="_blank">lab</a>.<br>
+    ------> I'm interested in science and education; one tool integrating those themes is this website sharing what I've discovered, so here we are!<br></p>
+  
+  <p>In addition to the above links...<br>
+     For occasional tweets, see <b><a href="https://twitter.com/devonorourke" target="_blank">twitter</b></a><br>  
+     And for all things code, see <b><a href="https://github.com/devonorourke" target="_blank">github</b></a>
+  </p>  
+</div>
+
+## place in: dev.../blog/atom.xml
+
+---
+layout: feed
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Devon O'Rourke's blog</title>
+	<link href="http://devonorourke.github.io/blog/atom.xml" rel="self"/>
+	<link href="http://devonorourke.github.io/blog"/>
+	<updated>{{ site.time | date_to_xmlschema }}</updated>
+	<id>http://devonorourke.github.io/blog</id>
+	<author>
+		<name>Devon O'Rourke</name>
+		<email>devon.orourke@gmail.com</email>
+	</author>
+
+	{% for post in site.posts %}
+		<entry>
+			<title>{{ post.title }}</title>
+			<link href="http://devonorourke.github.io{{ post.url }}"/>
+			<updated>{{ post.date | date_to_xmlschema }}</updated>
+			<id>http://devonorourke.github.io{{ post.id }}</id>
+			<content type="html">{{ post.content | xml_escape }}</content>
+		</entry>
+	{% endfor %}
+
+</feed>
+
+
+## place in dev.../blog/index.html
+---
+layout: default
+title: weblog, blog, log.
+---
+	<h1>{{ page.title }}</h1>
+	<ul class="posts">
+
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+	
+## place in dev.../css/main.css
+
+body {
+    margin: 60px auto;
+    width: 70%;
+}
+nav ul, footer ul {
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+a {
+    text-decoration: none;
+    color: #999;
+}
+a:hover {
+    text-decoration: underline;
+}
+h1 {
+    font-size: 3em;
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+}
+p {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    color: #333;
+}
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+}
+
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
+}
+
+## place in main directory as _config.yml
+name: bat genomics, guano, and eco-evo interactions
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+
+theme: jekyll-theme-slate
+
+## place in main directory as index.html
+---
+layout: default
+title: bat genomics, guano, and eco-evo interactions
+---
+<div class="blurb">
+<h1>Hi there, I'm Devon O'Rourke!</h1>
+<p>Read below to learn more about my work in science and education...</a></p>
+</div><!-- /.blurb -->
+
+
+## initial readme.md file:
+## Welcome!
+
+I'm a fourth year Ph.D candidate interested in science and education. My work in Dr. Jeff Foster's [lab] focuses on bat ecology and evolution. I'm interested in identifying a genetic basis for resistance to White-nose syndrome, a disease caused by a fungal pathogen that has killed millions of bats throughout North America over the last decade.  
+
+In addition, I am broadly interested in how scientists learn, work, and collaborate. I hope that my musings within these pages provide some insight into the challenges of scientists becoming better teachers, and teachers doing better science.
+
+[lab]:fozlab.weebly.com
