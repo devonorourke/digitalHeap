@@ -151,5 +151,5 @@ You'll notice that this will open up a web browser. If what you see is...
 ... well we've got problems. See you after class!  
 
 However, if what you see is something like this, then you're good to go - see you next time (but feel free to play around with the notebook to get a feel for it - check out [their documentation here](https://jupyter.readthedocs.io/en/latest/running.html)):
-
+<img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/hssci/jupNotopen.jpg" />.  
 
