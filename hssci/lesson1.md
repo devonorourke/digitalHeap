@@ -1,4 +1,4 @@
-# Jupyter Notebook
+# Another install?!?
 So recall that in the [introductory lesson](https://github.com/devonorourke/digitalHeap/blob/master/hssci/lesson0.md) we downloaded [Anaconda](https://www.anaconda.com/what-is-anaconda/), which contained [Python](https://www.python.org/about/gettingstarted/) as well as many other unnamed software packages. Basically, we downloaded some soft of Russian nested dolls of software. As mentioned earlier, one other advantage of doing this big installation was that we could quickly manage future downloads of additional software we might want/need. So to get our first lesson rolling we have to do just that - we need to download a program called [Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/index.html)!  
 
 You might be considering asking the following questions:  
@@ -18,5 +18,18 @@ Here's the thing - you're going to have to get at least a little bit familiar wi
   - Click on that *Spotlight* search icon in the top right of your computer and look for a program called `Terminal`. Open that up. Now we can talk to the computer!  
 
 ## Terminal basics 
+A stream of questions that might pop up in your head...  
+> Why did I just open up Terminal?  
+Because we need to give our computer commands.  
+> How do you give your computer commands?  
+By typing things where that blinking cursor sits (called the `command prompt`).  
+> Am I using Python right now?  
+No. No you are not.  
+> Why am I not using Python!?!  
+Because you have to tell the computer to use Python.
+> How do I tell the computer to use Python?  
+We're getting there.  
+
+So if you're keeping track at home, you've opened up a program that isn't Python so you can use Python.
 
 
