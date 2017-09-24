@@ -62,7 +62,7 @@ You'll probably have something slightly different, but a few key features to poi
 **root** --> **Users** --> **do**.  
 Organizationally, the output of the `pwd` command showed something termed the **full path**, which is to say, an ordered list of directories (folders) from the most parent (root) directory to whatever your current directory is. In other words, `pwd` really just **P**rints the full path to the **W**orking  **D**irectory.
 
-So `pwd` tells us where we are, but how do we get somewhere else? Because the Terminal doesn't just show you all the contents of the current folder you are in, you might need to do something like **L**ist them. Try typing:  
+So `pwd` tells us where we are, but how do we get somewhere else? Because `Terminal` doesn't just show you all the contents of the current folder you are in, you might need to do something like **l**i**s**t them. Try typing:  
 ```
 ls
 ```
@@ -78,8 +78,34 @@ But now it is extended to:
 ```
 Devons-MacBook-Air:Documents do
 ```
-What's the difference? We moved into the `Documents` directory, and our command prompt indicates just that! If for some reason that didn't work, you could always `ls` to check and see what the contents are in your current directory (assuming you know what's in the directory to begin with), but perhaps the simplest thing to do would be to use the `pwd` command to confirm that your Terminal program things you are where you are. Like so:  
+What's the difference? We moved into the `Documents` directory, and our command prompt indicates just that! You could always `ls` to check and see what the contents are in your current directory (assuming you know what's in the directory to begin with), but perhaps the simplest thing to do would be to use the `pwd` command to confirm that your Terminal program things you are where you are. Like so:  
 ```
 pwd
 /Users/do/Documents
 ```
+This gives the impression that you can only move one level up at a time. Not quite - you can also move back one level with a shorthand command:  
+```
+cd ..
+```
+Notice how you're back to the parent directory of `Documents`? Just check with `pwd` and you'll notice that your full path should say something like `/Users/{your.name}`... note "your.name" is generic. Cool - so we can advance up or down one level with the `cd` function, but it turns out we can use the `cd` command to jump to whatever directory you want to, provided you enter the **full path** of the intended destination. Here's an example; let's say I want to go to a folder that has the following path: `/Users/do/Documents/Roary/broad`, and let's assume I started from `/Users/do`. You might think the thing I'd need to do is:
+```
+cd Documents
+cd Roary
+cd broad
+```
+And, well, that would work, but that would be dumb if you knew where you were going. Instead, assuming you started in `/Users/do`, you can get there in one step: 
+```
+cd Documents/Roary/broad
+```
+Interesting note - there's a sort of default "just get me home" command which will always take you back to whatever "home" your system has defined (by you if you want to): `cd`. In the default case that's `/Users/{your.name}`. So if you happened to be in a way, way out subdirectory (like `/Users/do/Documents/Roary/broad`) you could navigate back the slow way:
+```
+cd ..
+cd ..
+cd ..
+```
+Or more quickly, assuming you started from `/Users/do/Documents/Roary/broad`, just type:
+```
+cd
+```
+
+
