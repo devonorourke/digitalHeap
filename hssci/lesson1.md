@@ -61,4 +61,24 @@ You'll probably have something slightly different, but a few key features to poi
 1. Like any tree, we start at the root. Our directory structure - that is, the organization of how all the folders and files are related - starts with a single symbol `/`. This is the *root* directory. One folder *within* that directory - termed a *subdirectory* - is called `Users`. The next subdirectory (the folder within the `Users` folder) is termed `do`. So what we really have are three levels of folders, going from the parent directory to subsequent subdirectories:  
 **root** --> **Users** --> **do**. Organizationally, the output of the `pwd` command showed something termed the **full path**, which is to say, an ordered list of directories (folders) from the most parent (root) directory to whatever your current directory is. In other words, `pwd` really just **P**rints the full path to the **W**orking  **D**irectory.
 
-So `pwd` tells us where we are, but how do we get somewhere else? What we really need to do is 
+So `pwd` tells us where we are, but how do we get somewhere else? Because the Terminal doesn't just show you all the contents of the current folder you are in, you might need to do something like **L**ist them. Try typing:  
+```
+ls
+```
+Did you get a print out of several files and folders? By default you won't be able to discriminate which one is a directory and which one is a file (but you can with more information, I promise!). But let's say you knew that you wanted to navigate to the `Documents` folder. What we'd need to do would be to do something like **c**hange **d**irectories... How about:  
+```
+cd Documents
+```
+At first glance it doesn't look like anything happened, but did you notice how the command prompt changed? Before you would have seen something like:  
+```
+Devons-MacBook-Air:~ do$
+```
+But now it is extended to:  
+```
+Devons-MacBook-Air:Documents do
+```
+What's the difference? We moved into the `Documents` directory, and our command prompt indicates just that! If for some reason that didn't work, you could always `ls` to check and see what the contents are in your current directory (assuming you know what's in the directory to begin with), but perhaps the simplest thing to do would be to use the `pwd` command to confirm that your Terminal program things you are where you are. Like so:  
+```
+pwd
+/Users/do/Documents
+```
