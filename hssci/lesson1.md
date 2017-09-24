@@ -199,6 +199,10 @@ Now find the "Run" icon and execute that command. Not a whole lot should happen,
 1. By default, your cell type is *code*, which is speaking in Python.
 2. In Python language, any time you start a line with the "#" character, it acts as a `comment`, which means no code will be executed. More on this in a second.  
 
+In movie form:  
+
+
+
 Great, now copy and paste the previous text into the second code block.
 ```
 # This is what happens when you use begin a line with "#" inside this cell type
