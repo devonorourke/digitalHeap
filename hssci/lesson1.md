@@ -139,18 +139,43 @@ That's it. Didn't I tell you Anaconda was awesome?
 
 
 # Finally - really - to Jupyter Notebook!
-In the next lesson we'll actually get going with using the unique interface of Jupyter. However, the last thing we'll to today is call the `Juptyer Notebook` program (now that you know how to move about the command line!). It's really simple:
+The last thing we'll to today is call the `Juptyer Notebook` program up (now that you know how to move about the command line!). It's really simple:
 ```
 jupyter notebook
 ```
 
-You'll notice that this will open up a web browser. If what you see is...
+You'll notice that this should do two things: open up a web browser, and generate a messsage in your `Terminal`. If what you see on the `Terminal` screen is...
 ```
 -bash: jupyter: command not found
 ```
 ... well we've got problems. See you after class!  
 
-However, if what you see is something like this, then you're good to go - see you next time (but feel free to play around with the notebook to get a feel for it - check out [their documentation here](https://jupyter.readthedocs.io/en/latest/running.html)):  
+However, if what you see in `Terminal` is something like this, then you're good to go:
+```
+[I 06:36:55.302 NotebookApp] Writing notebook server cookie secret to /Users/do/Library/Jupyter/runtime/notebook_cookie_secret
+[I 06:36:55.356 NotebookApp] Serving notebooks from local directory: /Users/do
+[I 06:36:55.356 NotebookApp] 0 active kernels
+[I 06:36:55.356 NotebookApp] The Jupyter Notebook is running at:
+[I 06:36:55.357 NotebookApp] http://localhost:8888/?token=1c1f8b0a540fd398f1c434635ffaa01b76a6ddb654185beb
+[I 06:36:55.357 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 06:36:55.358 NotebookApp]
+```
 
-<img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/jupNotopen.jpg" />
+This new web page is called the *Notebook Dashboard*, you should see a pretty basic layout like the image below. Essentially you open up a web page that functions like a Finder window - you can open up existing folders, create (a few kinds of) new files and folders, and a few other things we'll get into later. **Important**: the directory you **launch** `Jupyter Notebook` from is the directory that this web page starts from.  
+<img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/jupNotopen.jpg" />  
+
+
+> So is this Juypter Notebook?  
+No.  
+> What?!~! 
+Patience. Almost there. Read below.  
+
+## Creating a new notebook:
+See [this link](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html) for a great amount of information about the basic functionality of `Jupyter`. The following instructions are derived from that link. If you are a visual person who likes things in motion see [this .gif](https://media.giphy.com/media/FrAeFjLPOvT8I/giphy.gif) to figure out what to click. 
+
+From the *Notebook Dashboard*, click the `New` icon in the top right corner of the browser, then select `Python3` from the few options (it's the only Notebook option, but there are also simple files like `text file`, `folder`, and `terminal` you could select - this is another way you can create a new folder/file within `Jupyter`). Once you click on `Python3` a new window should open - your first Jupyter Notebook!  
+
+
+
+
 
