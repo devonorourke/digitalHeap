@@ -184,7 +184,7 @@ Before you get too excited (I hope you're excited!) click on the web browser tab
 
 Okay, switch back to your new notebook, titled **lesson1**.  
 
-## Using the notebook
+## Basic notebook functionality - it's all about the *cell* type
 At this point Jupyter Notebook might not look that interesting or powerful, but just you wait. There is a simplicity to it's functionality though. In essence, you create a notebook by adding new pieces called **cells**. There are a few different *kinds* of cells; while you can type anything you want in any cell type, the behavior of whatever you type depends on the kind of cell you're working with. You can change the type of cell by  
 1) **Code** - The default cell. Anything you type in this **cell** type will assume you are speaking in Python's lauguage. This is where the magic happens. More on this in a minute.  
 2) **Markdown** - Use this when you want to type textual/explanatory information, not code. It's called a *Markdown* cell type because it uses a syntax (think "way of speaking") that has a few tweaks. That is, it has it's own language, but it's super-duper straightforward and is worth your effort in learning. See [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that will help explain how to use Markdown. If you have this idea, you can always use the next cell type - Raw NBconvert.
@@ -199,22 +199,29 @@ Now find the "Run" icon and execute that command. Not a whole lot should happen,
 1. By default, your cell type is *code*, which is speaking in Python.
 2. In Python language, any time you start a line with the "#" character, it acts as a `comment`, which means no code will be executed. More on this in a second.  
 
-In movie form:  
+Or in a very simple movie, do this:  
+<img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap1.gif" />  
 
-
-
-Great, now copy and paste the previous text into the second code block.
-```
-# This is what happens when you use begin a line with "#" inside this cell type
-```
-But this time, **don't click run!**. Instead, do the following two things:
+Great, now copy and paste the previous text into the second code block. But this time, **don't click run!**. Instead, do the following two things:
 1) Find the icon that currently has "Code" listed, and change that to "Markdown". 
 2) Click "run"  
 
-What changed? The cell should have generated some text. It looks like the cell block sort of disappears, but you can double click on that text you just created and edit it. Try editing that text then click "run" again and see if you can make your own changes.  
+What changed? The cell should have generated some text. It looks like the cell block sort of disappears, but you can double click on that text you just created and edit it. Try editing that text then click "run" again and see if you can make your own changes. 
+
+Hopefully it looked something like this:  
+
+Or in a very simple movie, do this:  
+<img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap2.gif" />  
+
 
 Great, now let's try that last kind of cell type - Raw NBConvert. Paste that same initial text into the third cell, click that same "code" icon and change it to "Raw NBConvert", then click "run". And what do you see? Nothing changes! The thing about this cell type is that it just prints whatever you enter - no fancy changes.  
 
+Hopefully something along these lines:  
+
+Or in a very simple movie, do this:  
+<img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap3.gif" />  
+
+# Let's dive into using the *code* type of cells to do some basic calculations
 - example using code
 - example using Markdown
 
