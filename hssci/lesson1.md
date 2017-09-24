@@ -173,12 +173,27 @@ No.
 
 Patience. Almost there. Read below.  
 
-## Creating a new notebook:
-See [this link](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html) for a great amount of information about the basic functionality of `Jupyter`. The following instructions are derived from that link. If you are a visual person who likes things in motion see [this .gif](https://media.giphy.com/media/FrAeFjLPOvT8I/giphy.gif) to figure out what to click.  
+## Creating a new notebook
+See [this link](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html) for helpful documentation (ie. information about how to use the program) about the basic functionality of `Jupyter`. From the *Notebook Dashboard*, click the `New` icon in the top right corner of the browser, then select `Python3` from the few options (it's the only Notebook option, but there are also simple files like `text file`, `folder`, and `terminal` you could select - this is another way you can create a new folder/file within `Jupyter`). Once you click on `Python3` a new window should open - your first Jupyter Notebook!  You can then name this notebook whatever you like - I'm going to call it "**lesson1**".  
+
+In movie form, just do this:  
 
 <img src="https://media.giphy.com/media/FrAeFjLPOvT8I/giphy.gif" />  
 
-From the *Notebook Dashboard*, click the `New` icon in the top right corner of the browser, then select `Python3` from the few options (it's the only Notebook option, but there are also simple files like `text file`, `folder`, and `terminal` you could select - this is another way you can create a new folder/file within `Jupyter`). Once you click on `Python3` a new window should open - your first Jupyter Notebook!  
+Before you get too excited (I hope you're excited!) click on the web browser tab that you first opened when you launched `Jupyter` - that's your *Notebook Dashboard* tab (it's the tab titled **Home**). Notice anything that changed? You should see a little green icon that looks like a notebook on the screen with the name of your new notebook. You'll notice that it's running, which just means that the notebook is open and ready to be used. As you create more and more notebooks you'll find this green/gray icon coloring useful to figure out which notebooks are currently running (ie. active) or not.  
+
+Okay, switch back to your new notebook, titled **lesson1**.  
+
+## Using the notebook
+At this point Jupyter Notebook might not look that interesting or powerful, but just you wait. There is a simplicity to it's functionality though. In essence, you create a notebook by adding new pieces called **cells**. There are a few different *kinds* of cells; while you can type anything you want in any cell type, the behavior of whatever you type depends on the kind of cell you're working with:  
+1) Code - The default cell. Anything you type in this **cell** type will assume you are speaking in Python's lauguage. This is where the magic happens. More on this in a minute.  
+2) Markdown - Use this when you want to type textual/explanatory information, not code. It's called a *Markdown* cell type because it uses a syntax (think "way of speaking") that has a few tweaks. That is, it has it's own language, but it's super-duper straightforward and is worth your effort in learning. See [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that will help explain how to use Markdown. If you have this idea, you can always use the next cell type - Raw NBconvert.
+3) Raw NBConvert - It's as simple as it gets. This cell type simply prints whatever you type into it. For example, if you have an elegant code you want to execute but have selected the current cell to be this kind of cell, you'll just print out the text again - nothing will happen. Why use it? Some times it's nice to just have the output of something stripped down to basic text. Some times you don't want to use Markdown to write some sort of explanatory text. You'll find some use for it.
+4) Headings - Just ignore this cell type. In fact, if you try to use it, Jupyter will instruct you to just learn Markdown. I told you it was useful!  
+
+
+
+
 
 
 
