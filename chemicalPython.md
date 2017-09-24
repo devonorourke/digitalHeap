@@ -25,21 +25,17 @@ What's nice about the code blocks above is that you'll often just copy and paste
 
 Once software is downloaded (that's next!), you'll follow along with the instructions on other webpages to complete individual lessons. Fortunately though, the format is the same: some explanatory text and some code blocks. Think of this page as the introductory guide to getting you going with the installation work. Other webpages are dedicated to the individual lessons. Let's get started!  
 
-# The downloads
-## Part 1 - Big install: Anaconda
+# The Big install: Anaconda
 One side note to star things off:  
 > this program is big, so ensure you have enough hard drive space before install. Ask if you aren't sure. I probably should have written this course for an Amazon Cloud instance and you can remind me of my mistake in class when a dozen students have 2008 Dell machines running Windows Vista.*  
 
-**Step 1**: Download Anaconda
+**Download Anaconda**.  
 - Go [to this site](https://www.anaconda.com/download/) and download the **Python 3** software appropriate for your OS (Operating System). I'll say this again - **download Python3, not *Python2* unless you want to make your/my life difficult**. And one final time: **download Python 3.6** DO NOT download Python 2.7. Hope that's clear.  
 What's going to happen next? You'll download a file and open it, then click and follow along with the default installation parameters. This should be as quick and painless as installing iTunes.  
 
-- What did you just install? Probably a good thing to ask. Fortunately it's explained right on a tab from the page you just downloaded from - [see here](https://www.anaconda.com/what-is-anaconda/). If that doesn't help, think of what you just downloaded as three things: 
-1) A piece of software that *included* Python (we'll get to what Python is in a second) and many other useful programs
-2) A piece of software that allows you to download other software in future (this is often called a *package manager*)
-3) A piece of software that is free, constantly updated, and used by millions of people.   
+- What did you just install? Probably a good thing to ask. Fortunately it's explained right on a tab from the page you just downloaded from - [see here](https://www.anaconda.com/what-is-anaconda/). If that doesn't help, think of Anaconda like this: 
+1) It's a piece of software that *included* both Python (we'll get to what Python is in a second) and many other useful programs. That is, you just downloaded a bundle of things, not just one thing.
+2) Anaconda also isn't just a bundle. It has its own purpose too, and contains software that allows you to find and download other softare you don't have yet but want to get in one seamless fashion (this is often called a *package manager*). In other words, Anaconda comes with some preinstalled stuff, but also has the capacity to let you keep getting new stuff in one place. It may not be apparent at first, but trust me when I say that this is a very helpful feature.
+3) Finally, Anacaonda is piece of software that is free, constantly updated, and used by millions of people. A lot of folks create software and make it available to you. Translation: you just opened a door to a world of folks doing work for you! Question... why are you spending $$$ on textbooks when folks are providing this crap for free?  
 
-Question... why are you spending $$$ on textbooks when folks are providing this crap for free?
-
-## Part 2 - Tiny install: 
-What to do: easy - just 
+- So if Anaconda contained a bunch of programs, one of which was Python itself (specifically Python3 in this case), just what is Python? You can [read the official blurb here](https://www.python.org/doc/essays/blurb/). An unofficial blurb? It's a computer language, and like many computer languages it's a mechanism to facilitate communication between you and your computer. What are we going to do with Python? We're going to learn that it's language to talk to the computer - that's it! As with human language, computer languages are diverse in their history, syntax, and ease with which a novice can learn them. Python turns out to be a (relatively) clear language to work with, is widely adopted across a diverse set of academic disciplines, and contains many packages we'll work with. So it seemed like the sensible choice, but notably, it's far from the only one. 
