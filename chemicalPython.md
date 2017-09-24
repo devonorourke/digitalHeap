@@ -7,6 +7,7 @@ We have a few goals with this notebook:
 # almost ready to start
 First things first - how are we going to do any of this? It's going to work in two steps:  
 1) First, we need to download some software on your computer. You probably have downloaded some software before, but probably not the way we'll always do it; don't worry, we'll show you what to do every time. Generally the way we're going to explain something for you to do is by separating the text you see here with a `block of instructional code` which is unique from this information. Below are two examples that show one of two situations you will often come across: doing some sort of calculation (example 1) or downloading some sort of software (example 2).  
+
 **Example 1 - example code to perform some calculation**
 ```
 ## example 1: some sort of calculator
