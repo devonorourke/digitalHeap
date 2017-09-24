@@ -18,8 +18,7 @@ print (x+y)
 ```
 ## example 2: some sort of software
 cd $HOME
-conda install -c http://conda.binstar.org/gabrielelanaro chemlab
-## see documentation here: http://chemlab.readthedocs.io/en/latest/installation.html
+conda install -c schrodinger pymol
 ```
 What's nice about the code blocks above is that you'll often just copy and paste from this screen and on to another screen. Nice - you don't even have to type much in this project! Another thing worth mentioning - see those `##` characters above? - they're used in code blocks as *comments*; that is, they don't actually get interpreted by the computer to execute anything - they're just used by the programmer (me/you) to communicate with the user (you/me) about what is going on within the code. Pay attention for them as they often provide useful insights into what's going on with the code.  
 
