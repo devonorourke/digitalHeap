@@ -17,7 +17,7 @@ Here's the thing - you're going to have to get at least a little bit familiar wi
 - Do you have a Mac machine? Sweet. Do two things:  
   - Click on that *Spotlight* search icon in the top right of your computer and look for a program called `Terminal`. Open that up. Now we can talk to the computer!  
 
-## Terminal basics 
+## Terminal - are we there yet? 
 A stream of questions that might pop up in your head...  
 
 > Why did I just open up Terminal?  
@@ -45,7 +45,7 @@ So if you're keeping track at home, you've opened up a program that isn't Python
 
 It turns out `Terminal` is also a hugely useful piece of software to communicate lots of commands by itself (to keep with the above analogy, Terminal has it's own plane, and the one we're using is called `bash`). Before we get to using Python we're going to use Terminal's native language (`bash`) to do a variety of simple tasks. Just search online for "Terminal basics" and you'll find a million helpful guides [like this one](http://www.cs.virginia.edu/diochnos/tips/terminal/basics.html). In essence, most things you do with a mouse can be done at the command prompt, but many things done with the command line can't be done (at least quickly) with a mouse. Rather than bombard you with many useful (I'd argue essential) command line arguments all at once, we're going to stick to just a very few basics ones:  
 
-### Navigating the command line
+## Navigating the command line
 You know how when you open a window to look for some file you search through folders within folders within folders? Like how you can have a folder called "My Documents", and within that maybe multiple folders for each class? And how within that class you have perhaps other folders for each unit? And within whatever that unit folder is called you have things like a Word document, pictures, maybe a spreadsheet file, or a movie? Computers simplify this whole thing by boiling down everything into two things: **directories** or **files**. Directories are places where you store things. Files are everything that isn't a directory, which is to say things hold data or programs that can execute functions.  
 Why mention all this? Because when you're working within the `Terminal` program, you are essentially "in" one of those folders, and everything you do assumes that, by default, you are trying to do it in that very specific location. You can think of this "folders-in-folders-in-folders" structured as a tree - [see here for an example](http://dsl.org/cookbook/cookbook_8.html). With that tree structure in mind, let's get started moving around... 
 
@@ -106,6 +106,22 @@ cd ..
 Or more quickly, assuming you started from `/Users/do/Documents/Roary/broad`, just type:
 ```
 cd
+```
+
+Great, so that's how you move about. With that in mind, navigate to your `Documents` directory. Now we're going to learn one more `bash` program for the time being (all these commands like `cd`, `pwd` and `ls` are programs): `mkdir`. Any guess what that means? **M**a**k**e **dir**ectory - that is, we're going to make a folder.  
+
+Here's the thing to try: open up the Finder icon on your screen with your mouse and click on the `Documents` folder to open it. Move the `Terminal` window and Finder windows into positions next to each other so you can see both at once.  Now move back to `Terminal` and assuming your at the `../Documents` directory, type:
+```
+mkdir chem_lessons
+```
+Notice how a new folder named "chem_lessons" magically appeared? Well not magic - you told the computer to create a directory named that in that place - so the computer is just doing what it's told. And that's the whole point!  
+
+# Finally - to Jupyter!
+Now that you know how to use an execute `cd`, `ls`, `pwd`, and `mkdir` we can go about the business of doing the last (and most important) step of today's work: installing the program `Juptyer Notebook`. We're going to navigate back to the home directory. I'm going to show you three different ways to do the same thing (you only need to do one):  
+```
+cd          # super basic, super fast
+cd $HOME    # oohhh, what's that fancy environmental variable thing?
+cd ~        # it's called a tilda in case you were wondering, and it's how you often define the path for your home directory
 ```
 
 
