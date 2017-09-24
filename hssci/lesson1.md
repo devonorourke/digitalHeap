@@ -199,7 +199,7 @@ Now find the "Run" icon and execute that command. Not a whole lot should happen,
 1. By default, your cell type is *code*, which is speaking in Python.
 2. In Python language, any time you start a line with the "#" character, it acts as a `comment`, which means no code will be executed. More on this in a second.  
 
-Or in a very simple movie, do this:  
+Here's a screen capture of what it should look like for you:
 <img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap1.gif" />  
 
 Great, now copy and paste the previous text into the second code block. But this time, **don't click run!**. Instead, do the following two things:
@@ -209,16 +209,12 @@ Great, now copy and paste the previous text into the second code block. But this
 What changed? The cell should have generated some text. It looks like the cell block sort of disappears, but you can double click on that text you just created and edit it. Try editing that text then click "run" again and see if you can make your own changes. 
 
 Hopefully it looked something like this:  
-
-Or in a very simple movie, do this:  
 <img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap2.gif" />  
 
 
 Great, now let's try that last kind of cell type - Raw NBConvert. Paste that same initial text into the third cell, click that same "code" icon and change it to "Raw NBConvert", then click "run". And what do you see? Nothing changes! The thing about this cell type is that it just prints whatever you enter - no fancy changes.  
 
-Hopefully something along these lines:  
-
-Or in a very simple movie, do this:  
+Something along these lines:
 <img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap3.gif" />  
 
 # Let's dive into using the *code* type of cells to do some basic calculations
