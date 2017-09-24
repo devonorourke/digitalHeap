@@ -166,12 +166,17 @@ This new web page is called the *Notebook Dashboard*, you should see a pretty ba
 
 
 > So is this Juypter Notebook?  
+
 No.  
-> What?!~! 
+
+> What?!~!  
+
 Patience. Almost there. Read below.  
 
 ## Creating a new notebook:
-See [this link](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html) for a great amount of information about the basic functionality of `Jupyter`. The following instructions are derived from that link. If you are a visual person who likes things in motion see [this .gif](https://media.giphy.com/media/FrAeFjLPOvT8I/giphy.gif) to figure out what to click. 
+See [this link](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html) for a great amount of information about the basic functionality of `Jupyter`. The following instructions are derived from that link. If you are a visual person who likes things in motion see [this .gif](https://media.giphy.com/media/FrAeFjLPOvT8I/giphy.gif) to figure out what to click.  
+
+<img src="https://media.giphy.com/media/FrAeFjLPOvT8I/giphy.gif" />  
 
 From the *Notebook Dashboard*, click the `New` icon in the top right corner of the browser, then select `Python3` from the few options (it's the only Notebook option, but there are also simple files like `text file`, `folder`, and `terminal` you could select - this is another way you can create a new folder/file within `Jupyter`). Once you click on `Python3` a new window should open - your first Jupyter Notebook!  
 
