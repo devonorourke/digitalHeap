@@ -223,7 +223,69 @@ Let's dive into using the *code* type of cells to do the two main things we'll b
 - importing programs to perform not so basic calculations  
 
 ## Basic calculations
-If your head isn't spinning yet, awesome. If it is, don't worry (it probably should be). In just two short lessons you've had to learn how to speak in three computer languages (`bash`, `markdown`, and now `Python`), navigate how to click through a bunch of new programs (`Jupyter`, `Terminal`), and somehow we haven't even got to the chemistry - but we will right now!
+If your head isn't spinning yet, awesome. If it is, don't worry (it probably should be). In just two short lessons you've had to learn how to speak in three computer languages (`bash`, `markdown`, and now `Python`), navigate how to click through a bunch of new programs (`Jupyter`, `Terminal`), and somehow we haven't even got to the chemistry - but we will (sort of) right now!  
+
+I say "sort of" because what we're about to do has nothing to do with *chemistry* at all. It has everything to do with *language* - specifically, the language of Python. What we need to do first is learn how to speak in Python. Like any new language we're going to start with basic parts of speach and build from there. For today's lesson we'll introduce a few new terms (**in bold**) which aren't really Python specific as much as computer-programming generic:  
+
+**Statments** are like sentences; they can be complicated or simple; they can be long or short.  
+Here are two examples of statements:  
+First, a statement where we **assign** a **variable** `x':
+```
+x = 5
+```
+In other words, any time you type `x`, the computer will remember that it equals `5`. Just like your first Algebra class, we can then use this variable to do whatever we want.  
+
+For instance, in this next statement, we use that **assigned variable** (and a new variable) to create an output, *and* we then tell the program to provide us with a result by :  
+```
+x = 5
+y = 2
+print(x + y)
+``` 
+
+Try typing this into your first *cell* in the notebook. Run the cell with *code* default behavior. See an output you expect? Nice! Now try editing the original text with the default `code` cell type; maybe change the value of `x` or the expression in the `print` statement from `+` to `-`. Does it continue to function as you expect? It should look something like what I've done below. Take note of two things:
+- First, I've showed you how to execute addition, subtraction, division, multiplication, and exponents)  
+- Second, that last line is called a **print statement**, and when you click "run" you'll generate an output. Without that `print` function, you won't get any useful calculation out of executing the code.  
+
+<img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap4.gif" />  
+
+You should also try changing the *cell* type from `code` to `Markdown` - what happens? What about changing it to `NB Convert`? And weirdly - why is there that error? More on that in a sec... At this point you're probably going to have lots of questions about just how to speak Python, and there are a lot of answers. Most times you'll end up Googling something and see a massive computer-science-looking cheatsheet with lots of information [like this one](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf) that makes the "basics" seem not so basic. Don't worry - we won't have to conver all of that, but just know that the information is out there. If this kind of thing seems really fun to you, I'd suggest staring with [Python's tutorials](https://docs.python.org/3.6/tutorial/index.html) - they cover a lot - but you can rest assured we'll give you everything you need to get through the material for this program.  
+
+But think back to that last error - why did that happen? What did that even mean? The last line of the output really says it all:
+```
+NameError: name 'sqrt' is not defined
+```
+I tried executing a **variable** called `sqrt` to my print statement. But Python has no idea what `sqrt` means. We can do two things about that:  
+1. We can write our own function named `sqrt`, and then use that function to complete the square rooting of whatever values we want.  
+2. We can import someone else's function who already did this.  
+
+I'm lazy, so we're going with option 2. As an added benefit, it illustrates another thing we'll routinely do: importing another program.  
+
+## Importing modules
+Python is a language that has its own core set of programs - termed **modules** - which perform a diverse set of tasks. Some are highly specified and short, others are highly specified and enormous, and others still are broadly applicable to a lot of tasks. What we're going to need to do first is import a program that does square rooting. How do we do that? Easy, that's how.  
+
+We'll need to do this in an empty `code` block:  
+```
+from math import *
+```
+
+Then execute the original script we last tried in a new code block below:  
+```
+x = 9
+y = 3
+print(sqrt(x))
+```
+
+Boom! You can square root to your heart's content. So what did we just learn? Well a few things:
+1. There's this thing called `import` which is a function which lets you access other programs which aren't currently running when we first start our Jupyter Notebook.  
+2. There's this thing called `math` which is a program that lets me do square root calculations.  
+3. There's this weird astersik `*` which I don't understand yet. *Don't worry. It's called a wild card. We'll talk about [regular expressions](https://docs.python.org/3/library/re.html) later.*  
+
+Okay, so what about importing something that doesn't do math. Does Jupyter Notebook let me do something that my TI-89 can't (or iPhone, or whatever)? Yup. [More than you care to imagine](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks). And that leaves us with one final task - remember way, way back we downloaded some program called `chemlabs`? Maybe not. But I swear you did. So we have this program installed but we haven't yet loaded the program; that is, it's available to us, but we haven't told our Jupyter Notebook (via Python) to go and make it available. Just like how we had the `math` module available to us but needed to first type `import` to get it working. Let's do that with `chemlabs` and see what's under the hood:  
+
+```
+import chemlabs 
+```
+
 
 
 
