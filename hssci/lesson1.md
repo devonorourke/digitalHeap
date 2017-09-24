@@ -1,10 +1,10 @@
 # Another install?!?
-So recall that in the [introductory lesson](https://github.com/devonorourke/digitalHeap/blob/master/hssci/lesson0.md) we downloaded [Anaconda](https://www.anaconda.com/what-is-anaconda/), which contained [Python](https://www.python.org/about/gettingstarted/) as well as many other unnamed software packages. Basically, we downloaded some soft of Russian nested dolls of software. As mentioned earlier, one other advantage of doing this big installation was that we could quickly manage future downloads of additional software we might want/need. So to get our first lesson rolling we have to do just that - we need to download a program called [Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/index.html)!  
+So recall that in the [introductory lesson](https://github.com/devonorourke/digitalHeap/blob/master/hssci/lesson0.md) we downloaded [Anaconda](https://www.anaconda.com/what-is-anaconda/), which contained [Python](https://www.python.org/about/gettingstarted/) as well as many other unnamed software packages. Basically, we downloaded some soft of Russian nested dolls of software. As mentioned earlier, one other advantage of doing this big installation was that we could quickly manage future downloads of additional software we might want/need. And another reason was that many of those non-Python packages might be useful to us? To get our first lesson rolling we're going to do both of those things: download something we do have ([Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/index.html)) and download something we don't (a program called [chemlab](http://chemlab.readthedocs.io/en/latest/index.html)).  
 
 You might be considering asking the following questions:  
 > 1) How many times are we going to be downloading software? Is that all this course is about?
-Answer: You will download software routinely. This is not what the course is about.  
-> 2) Why am I downloading *this particular software*?
+Answer: You will download software routinely. This is not all this course is about.  
+> 2) Why do I want Jupyter Notebook?
 Answer: Better question! We're using this software because it's a digital notebook which lets you simultaneously write the code you want to perform a function, execute that code within the program, see the output of that code, **AND** let's you separate out all your code, output, and basic note taking into convenient blocks. It does a lot of useful stuff, okay?   
 > 3) I don't have any other questions... how do I do this so I can get to lunch?
 Answer: See below. And you can eat in lab for all I care.  
@@ -55,11 +55,11 @@ pwd
 ```
 In case it wasn't obvious, you also need to press "return" or "enter" on your keyboard. Notice how the program then exeuctes the command and generates an output? Hopefully it looked something like this:  
 ```
-/Users/do
+/Users/devon
 ```
 You'll probably have something slightly different, but a few key features to point out:  
-1. Like any tree, we start at the root. Our directory structure - that is, the organization of how all the folders and files are related - starts with a single symbol `/`. This is the *root* directory. One folder *within* that directory - termed a *subdirectory* - is called `Users`. The next subdirectory (the folder within the `Users` folder) is termed `do`. So what we really have are three levels of folders, going from the parent directory to subsequent subdirectories:  
-**root** --> **Users** --> **do**.  
+1. Like any tree, we start at the root. Our directory structure - that is, the organization of how all the folders and files are related - starts with a single symbol `/`. This is the *root* directory. One folder *within* that directory - termed a *subdirectory* - is called `Users`. The next subdirectory (the folder within the `Users` folder) is termed `devon`. So what we really have are three levels of folders, going from the parent directory to subsequent subdirectories:  
+**root** --> **Users** --> **devon**.  
 Organizationally, the output of the `pwd` command showed something termed the **full path**, which is to say, an ordered list of directories (folders) from the most parent (root) directory to whatever your current directory is. In other words, `pwd` really just **P**rints the full path to the **W**orking  **D**irectory.
 
 So `pwd` tells us where we are, but how do we get somewhere else? Because `Terminal` doesn't just show you all the contents of the current folder you are in, you might need to do something like **l**i**s**t them. Try typing:  
@@ -72,11 +72,11 @@ cd Documents
 ```
 At first glance it doesn't look like anything happened, but did you notice how the command prompt changed? Before you would have seen something like:  
 ```
-Devons-MacBook-Air:~ do$
+Devons-MacBook-Air:~ devon$
 ```
 But now it is extended to:  
 ```
-Devons-MacBook-Air:Documents do
+Devons-MacBook-Air:Documents devon
 ```
 What's the difference? We moved into the `Documents` directory, and our command prompt indicates just that! You could always `ls` to check and see what the contents are in your current directory (assuming you know what's in the directory to begin with), but perhaps the simplest thing to do would be to use the `pwd` command to confirm that your Terminal program things you are where you are. Like so:  
 ```
@@ -87,23 +87,23 @@ This gives the impression that you can only move one level up at a time. Not qui
 ```
 cd ..
 ```
-Notice how you're back to the parent directory of `Documents`? Just check with `pwd` and you'll notice that your full path should say something like `/Users/{your.name}`... note "your.name" is generic. Cool - so we can advance up or down one level with the `cd` function, but it turns out we can use the `cd` command to jump to whatever directory you want to, provided you enter the **full path** of the intended destination. Here's an example; let's say I want to go to a folder that has the following path: `/Users/do/Documents/Roary/broad`, and let's assume I started from `/Users/do`. You might think the thing I'd need to do is:
+Notice how you're back to the parent directory of `Documents`? Just check with `pwd` and you'll notice that your full path should say something like `/Users/{your.name}`... note "your.name" is generic. Cool - so we can advance up or down one level with the `cd` function, but it turns out we can use the `cd` command to jump to whatever directory you want to, provided you enter the **full path** of the intended destination. Here's an example; let's say I want to go to a folder that has the following path: `/Users/devon/Documents/Chemistry/Unit1`, and let's assume I started from `/Users/devon`. You might think the thing I'd need to do is:
 ```
 cd Documents
-cd Roary
-cd broad
+cd Chemistry
+cd Unit1
 ```
-And, well, that would work, but that would be dumb if you knew where you were going. Instead, assuming you started in `/Users/do`, you can get there in one step: 
+And, well, that would work, but that would be dumb if you knew where you were going. Instead, assuming you started in `/Users/devon`, you can get there in one step: 
 ```
-cd Documents/Roary/broad
+cd Documents/Chemistry/Unit1
 ```
-Interesting note - there's a sort of default "just get me home" command which will always take you back to whatever "home" your system has defined (by you if you want to): `cd`. In the default case that's `/Users/{your.name}`. So if you happened to be in a way, way out subdirectory (like `/Users/do/Documents/Roary/broad`) you could navigate back the slow way:
+Interesting note - there's a sort of default "just get me home" command which will always take you back to whatever "home" your system has defined (by you if you want to): `cd`. In the default case that's `/Users/{your.name}`. So if you happened to be in a way, way out subdirectory (like `/Users/devon/Documents/Chemistry/Unit1`) you could navigate back the slow way:
 ```
 cd ..
 cd ..
 cd ..
 ```
-Or more quickly, assuming you started from `/Users/do/Documents/Roary/broad`, just type:
+Or more quickly, assuming you started from `/Users/devon/Documents/Chemistry/Unit1`, just type:
 ```
 cd
 ```
@@ -113,15 +113,43 @@ Great, so that's how you move about. With that in mind, navigate to your `Docume
 Here's the thing to try: open up the Finder icon on your screen with your mouse and click on the `Documents` folder to open it. Move the `Terminal` window and Finder windows into positions next to each other so you can see both at once.  Now move back to `Terminal` and assuming your at the `../Documents` directory, type:
 ```
 mkdir chem_lessons
+## you type that "_" symbol with holding down the "shift" button and then hitting the 'minus' symbol next to the 'zero' key
 ```
 Notice how a new folder named "chem_lessons" magically appeared? Well not magic - you told the computer to create a directory named that in that place - so the computer is just doing what it's told. And that's the whole point!  
 
-# Finally - to Jupyter!
-Now that you know how to use an execute `cd`, `ls`, `pwd`, and `mkdir` we can go about the business of doing the last (and most important) step of today's work: installing the program `Juptyer Notebook`. We're going to navigate back to the home directory. I'm going to show you three different ways to do the same thing (you only need to do one):  
+# Are we there yet?
+Now that you know how to use an execute `cd`, `ls`, `pwd`, and `mkdir` we can go about the business of executing the last (and most important) step of today's work: downloading the `rdkit` program. Like before, we're conducting this business within `Terminal`, and like before, we're going to start in our home directory. I'm going to show you three different ways to do the same thing to get back to that spot (you only need to do one of the following):  
 ```
 cd          # super basic, super fast
 cd $HOME    # oohhh, what's that fancy environmental variable thing?
 cd ~        # it's called a tilda in case you were wondering, and it's how you often define the path for your home directory
 ```
+Remember you can check you're in the right spot with `pwd`.  
+
+Let's now use `Anaconda's` software to execute a specific task: download another piece of software ([chemlab](http://chemlab.readthedocs.io/en/latest/installation.html). In one remarkably simple line of code, this will:  
+a) download the most recent version of the tool
+b) download any dependent programs this tool requires that you might not have
+c) perform version-compatibility among those various programs to make sure nothing breaks
+d) put it in a place on your computer where it will work seamlessly so you can call it up from any position on the command line. 
+
+```
+http://chemlab.readthedocs.io/en/latest/installation.html
+```
+That's it. Didn't I tell you Anaconda was awesome?  
+
+
+# Finally - really - to Jupyter Notebook!
+In the next lesson we'll actually get going with using the unique interface of Jupyter. However, the last thing we'll to today is call the `Juptyer Notebook` program (now that you know how to move about the command line!). It's really simple:
+```
+jupyter notebook
+```
+
+You'll notice that this will open up a web browser. If what you see is...
+```
+-bash: jupyter: command not found
+```
+... well we've got problems. See you after class!  
+
+However, if what you see is something like this, then you're good to go - see you next time (but feel free to play around with the notebook to get a feel for it - check out [their documentation here](https://jupyter.readthedocs.io/en/latest/running.html)):
 
 
