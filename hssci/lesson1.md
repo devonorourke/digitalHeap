@@ -206,20 +206,24 @@ Great, now copy and paste the previous text into the second code block. But this
 1) Find the icon that currently has "Code" listed, and change that to "Markdown". 
 2) Click "run"  
 
-What changed? The cell should have generated some text. It looks like the cell block sort of disappears, but you can double click on that text you just created and edit it. Try editing that text then click "run" again and see if you can make your own changes. 
+What changed? The cell should have generated some text. It looks like the cell block sort of disappears, but you can double click on that text you just created and edit it. Try editing that text then click "run" again and see if you can make your own changes. I've also pasted the same text into another cell, then deleted the `#` symbol. Notice how the same **markdown** cell type produces a different output depending on whether or not a `#` is present? That's part of the syntax of that language - a `#` means "display this text like a header". Again, check out [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to look into the subtletys of the the markdown language.
 
 Hopefully it looked something like this:  
 <img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap2.gif" />  
 
 
-Great, now let's try that last kind of cell type - Raw NBConvert. Paste that same initial text into the third cell, click that same "code" icon and change it to "Raw NBConvert", then click "run". And what do you see? Nothing changes! The thing about this cell type is that it just prints whatever you enter - no fancy changes.  
+Great, now let's try that last kind of cell type - Raw NBConvert. Paste that same initial text into the next empty cell, click that same "code" icon and change it to "Raw NBConvert", then click "run". And what do you see? Nothing changes! The thing about this cell type is that it just prints whatever you enter - no fancy changes.  
 
 Something along these lines:
 <img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap3.gif" />  
 
-# Let's dive into using the *code* type of cells to do some basic calculations
-- example using code
-- example using Markdown
+# Super brief intro to Python using the *code* type of cell
+Let's dive into using the *code* type of cells to do the two main things we'll be doing over and over agin: 
+- performing basic calculations
+- importing programs to perform not so basic calculations  
+
+## Basic calculations
+If your head isn't spinning yet, awesome. If it is, don't worry (it probably should be). In just two short lessons you've had to learn how to speak in three computer languages (`bash`, `markdown`, and now `Python`), navigate how to click through a bunch of new programs (`Jupyter`, `Terminal`), and somehow we haven't even got to the chemistry - but we will right now!
 
 
 
