@@ -19,15 +19,16 @@ Here's the thing - you're going to have to get at least a little bit familiar wi
 
 ## Terminal basics 
 A stream of questions that might pop up in your head...  
+
 > Why did I just open up Terminal?  
 
 Because we need to give our computer commands.  
 
-> How do you give your computer commands?  
+> Fine. How do I give my computer commands?  
 
 By typing things where that blinking cursor sits (called the `command prompt`).  
 
-> Am I using Python right now?  
+> But am I using Python right now?  
 
 No. No you are not.  
 
@@ -35,10 +36,29 @@ No. No you are not.
 
 Because you have to tell the computer to use Python.
 
-> How do I tell the computer to use Python?  
+> Okay, how do I tell the computer to use Python?  
 
 We're getting there.  
 
-So if you're keeping track at home, you've opened up a program that isn't Python so you can use Python.
 
+So if you're keeping track at home, you've opened up a program that isn't Python so you can use Python...  Why? Because this `Terminal` program is really kind of like an airport terminal - it's the place you go *before* you get to your destination. It can take you anywhere, depending on which plane you want to take off in. In our case, we might be looking for the Python plane. But you might want to jump aboard the [R](https://www.r-project.org/about.html) plane, or [Julia](https://julialang.org/) plane, or any other computer program you want to start communicating with. So the `Terminal` acts as this singular big landing site from which you can start many different journeys.  
 
+It turns out `Terminal` is also a hugely useful piece of software to communicate lots of commands by itself (to keep with the above analogy, Terminal has it's own plane, and the one we're using is called `bash`). Before we get to using Python we're going to use Terminal's native language (`bash`) to do a variety of simple tasks. Just search online for "Terminal basics" and you'll find a million helpful guides [like this one](http://www.cs.virginia.edu/diochnos/tips/terminal/basics.html). In essence, most things you do with a mouse can be done at the command prompt, but many things done with the command line can't be done (at least quickly) with a mouse. Rather than bombard you with many useful (I'd argue essential) command line arguments all at once, we're going to stick to just a very few basics ones:  
+
+### Navigating the command line
+You know how when you open a window to look for some file you search through folders within folders within folders? Like how you can have a folder called "My Documents", and within that maybe multiple folders for each class? And how within that class you have perhaps other folders for each unit? And within whatever that unit folder is called you have things like a Word document, pictures, maybe a spreadsheet file, or a movie? Computers simplify this whole thing by boiling down everything into two things: **directories** or **files**. Directories are places where you store things. Files are everything that isn't a directory, which is to say things hold data or programs that can execute functions.  
+Why mention all this? Because when you're working within the `Terminal` program, you are essentially "in" one of those folders, and everything you do assumes that, by default, you are trying to do it in that very specific location. You can think of this "folders-in-folders-in-folders" structured as a tree - [see here for an example](http://dsl.org/cookbook/cookbook_8.html). With that tree structure in mind, let's get started moving around... 
+
+First, let's figure out where we are right when we open up the `Terminal` program. Just type:
+```
+pwd
+```
+In case it wasn't obvious, you also need to press "return" or "enter" on your keyboard. Notice how the program then exeuctes the command and generates an output? Hopefully it looked something like this:  
+```
+/Users/do
+```
+You'll probably have something slightly different, but a few key features to point out:  
+1. Like any tree, we start at the root. Our directory structure - that is, the organization of how all the folders and files are related - starts with a single symbol `/`. This is the *root* directory. One folder *within* that directory - termed a *subdirectory* - is called `Users`. The next subdirectory (the folder within the `Users` folder) is termed `do`. So what we really have are three levels of folders, going from the parent directory to subsequent subdirectories:  
+**root** --> **Users** --> **do**. Organizationally, the output of the `pwd` command showed something termed the **full path**, which is to say, an ordered list of directories (folders) from the most parent (root) directory to whatever your current directory is. In other words, `pwd` really just **P**rints the full path to the **W**orking  **D**irectory.
+
+So `pwd` tells us where we are, but how do we get somewhere else? What we really need to do is 
