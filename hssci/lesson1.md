@@ -59,7 +59,8 @@ In case it wasn't obvious, you also need to press "return" or "enter" on your ke
 ```
 You'll probably have something slightly different, but a few key features to point out:  
 1. Like any tree, we start at the root. Our directory structure - that is, the organization of how all the folders and files are related - starts with a single symbol `/`. This is the *root* directory. One folder *within* that directory - termed a *subdirectory* - is called `Users`. The next subdirectory (the folder within the `Users` folder) is termed `do`. So what we really have are three levels of folders, going from the parent directory to subsequent subdirectories:  
-**root** --> **Users** --> **do**. Organizationally, the output of the `pwd` command showed something termed the **full path**, which is to say, an ordered list of directories (folders) from the most parent (root) directory to whatever your current directory is. In other words, `pwd` really just **P**rints the full path to the **W**orking  **D**irectory.
+**root** --> **Users** --> **do**.  
+Organizationally, the output of the `pwd` command showed something termed the **full path**, which is to say, an ordered list of directories (folders) from the most parent (root) directory to whatever your current directory is. In other words, `pwd` really just **P**rints the full path to the **W**orking  **D**irectory.
 
 So `pwd` tells us where we are, but how do we get somewhere else? Because the Terminal doesn't just show you all the contents of the current folder you are in, you might need to do something like **L**ist them. Try typing:  
 ```
