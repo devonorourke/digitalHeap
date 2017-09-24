@@ -20,18 +20,23 @@ Here's the thing - you're going to have to get at least a little bit familiar wi
 ## Terminal basics 
 A stream of questions that might pop up in your head...  
 > Why did I just open up Terminal?  
+
 Because we need to give our computer commands.  
 
 > How do you give your computer commands?  
+
 By typing things where that blinking cursor sits (called the `command prompt`).  
 
 > Am I using Python right now?  
+
 No. No you are not.  
 
 > Why am I not using Python!?!  
+
 Because you have to tell the computer to use Python.
 
 > How do I tell the computer to use Python?  
+
 We're getting there.  
 
 So if you're keeping track at home, you've opened up a program that isn't Python so you can use Python.
