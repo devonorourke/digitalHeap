@@ -1,5 +1,5 @@
 # Another install?!?
-So recall that in the [introductory lesson](https://github.com/devonorourke/digitalHeap/blob/master/hssci/lesson0.md) we downloaded [Anaconda](https://www.anaconda.com/what-is-anaconda/), which contained [Python](https://www.python.org/about/gettingstarted/) as well as many other unnamed software packages. Basically, we downloaded some soft of Russian nested dolls of software. As mentioned earlier, one other advantage of doing this big installation was that we could quickly manage future downloads of additional software we might want/need. And another reason was that many of those non-Python packages might be useful to us? To get our first lesson rolling we're going to do both of those things: download something we do have ([Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/index.html)) and download something we don't (a program called [PyMol](https://pymol.org/2/)).  
+So recall that in the [introductory lesson](https://github.com/devonorourke/digitalHeap/blob/master/hssci/lesson0.md) we downloaded [Anaconda](https://www.anaconda.com/what-is-anaconda/), which contained [Python](https://www.python.org/about/gettingstarted/) as well as many other unnamed software packages. Basically, we downloaded some soft of Russian nested dolls of software. As mentioned earlier, one other advantage of doing this big installation was that we could quickly manage future downloads of additional software we might want/need. And another reason was that many of those non-Python packages might be useful to us? To get our first lesson rolling we're going to do both of those things: download something we do have ([Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/index.html)) and download something we don't (a program called [nglview](https://github.com/arose/nglview)).  
 
 You might be considering asking the following questions:  
 > 1) How many times are we going to be downloading software? Is that all this course is about?
@@ -280,11 +280,28 @@ Boom! You can square root to your heart's content. So what did we just learn? We
 2. There's this thing called `math` which is a program that lets me do square root calculations.  
 3. There's this weird astersik `*` which I don't understand yet. *Don't worry. It's called a wild card. We'll talk about [regular expressions](https://docs.python.org/3/library/re.html) later.*  
 
-Okay, so what about importing something that doesn't do math. Does Jupyter Notebook let me do something that my TI-89 can't (or iPhone, or whatever)? Yup. [More than you care to imagine](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks). And that leaves us with one final task - remember way, way back we downloaded some program called `chemlabs`? Maybe not. But I swear you did. So we have this program installed but we haven't yet loaded the program; that is, it's available to us, but we haven't told our Jupyter Notebook (via Python) to go and make it available. Just like how we had the `math` module available to us but needed to first type `import` to get it working. Let's do that with `chemlabs` and see what's under the hood:  
+Okay, so what about importing something that doesn't do math. Does Jupyter Notebook let me do something that my TI-89 can't (or iPhone, or whatever)? Yup. [More than you care to imagine](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks). And that leaves us with one final task - remember way, way back at the beginning of this lesson we talked about downloading some program called `nglview`? Maybe not. But it's there, I promise. How do we do that? Easy - but you have to go back to your `Terminal`.  
+
+From the command line, type:
+```
+cd ~
+conda install nglview -c bioconda
+conda install -c ambermd pytraj
+jupyter-nbextension enable nglview --py --sys-prefix
+
+## If you happen to get a message "Proceed ([y]/n)?" just type "y" then hit 'enter'
+```
+
+Nice and easy; thanks Conda. Now we have this program installed but we haven't yet loaded the program; that is, it's available to us, but we haven't told our Jupyter Notebook (via Python) to go and make it available. Just like how we had the `math` module available to us but needed to first type `import` to get it working. Let's do that with `nglview` and see what's under the hood:  
 
 ```
-import chemlabs 
+import nglview
+view = nglview.show_pdbid("3pqr")  # load "3pqr" from RCSB PDB and display viewer widget
+view
 ```
+
+What are you seeing here? As [explained on their example page](https://github.com/arose/nglview#example) what you're seeing is a visualization of a complex arrangement of molecules - in fact, this is a [rhodhopsin protein](http://www.rcsb.org/pdb/explore.do?structureId=3pqr) which is involved in making eyesight possible.
+
 
 
 
