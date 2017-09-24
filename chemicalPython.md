@@ -1,10 +1,10 @@
-# little Big intro
+# on the soapbox
 We have a few goals with this notebook:  
 1) **Work smarter, not harder**. Why spend most of your time in class performing calculations when computers can do them for you? Let's use computers what they're made to do: compute!
 2) **Learn something useful**. It's natural to ask the question *why do I need to learn this material*. It's also pretty natural to hear some convoluted response about how if you want to be an X or Y in life, you're going to need to know A, B, and C. Sure... Yes, you're going to learn chemistry. But realize that this project will simultaneously provide you with a small set of computational tools that you can apply in the short term and long term, whether you're interested in engineering, economics, or fantasy football (okay, [or sabermetrics broadly](https://shenjeffreydatascience.tumblr.com/post/101741302014/data-science-sabermetrics)). In other words - this computer stuff? It applies to everything that has anything to do with using data. And just about any career you think about can use some sort of data analytic tools you'll start to use here.  
 3) **Learn by doing**. Plain and simple - let's actually do the stuff you're learning about. Code. Break code. Recode. Learn.
 
-# breaks before gas
+# almost ready to start
 First things first - how are we going to do any of this? It's going to work in two steps:  
 1) First, we need to download some software on your computer. You probably have downloaded some software before, but probably not the way we'll always do it; don't worry, we'll show you what to do every time. Generally the way we're going to explain something for you to do is by separating the text you see here with a `block of instructional code` which is unique from this information. Below are two examples that show one of two situations you will often come across: doing some sort of calculation (example 1) or downloading some sort of software (example 2). 
 **Example 1 - example code to perform some calculation**
