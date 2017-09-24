@@ -176,7 +176,7 @@ Patience. Almost there. Read below.
 ## Creating a new notebook
 See [this link](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html) for helpful documentation (ie. information about how to use the program) about the basic functionality of `Jupyter`. From the *Notebook Dashboard*, click the `New` icon in the top right corner of the browser, then select `Python3` from the few options (it's the only Notebook option, but there are also simple files like `text file`, `folder`, and `terminal` you could select - this is another way you can create a new folder/file within `Jupyter`). Once you click on `Python3` a new window should open - your first Jupyter Notebook!  You can then name this notebook whatever you like - I'm going to call it "**lesson1**".  
 
-In movie form, just do this:  
+In movie form, just do this (I didn't make this movie, so they name it "*My New Notebook*" instead of calling it "*lesson1*"):  
 
 <img src="https://media.giphy.com/media/FrAeFjLPOvT8I/giphy.gif" />  
 
