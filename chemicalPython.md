@@ -31,7 +31,15 @@ One side note to star things off:
 > this program is big, so ensure you have enough hard drive space before install. Ask if you aren't sure. I probably should have written this course for an Amazon Cloud instance and you can remind me of my mistake in class when a dozen students have 2008 Dell machines running Windows Vista.*  
 
 **Step 1**: Download Anaconda
-- Go [to this site](https://www.anaconda.com/download/) and download the software appropriate for your OS (Operating System).
+- Go [to this site](https://www.anaconda.com/download/) and download the **Python 3** software appropriate for your OS (Operating System). I'll say this again - **download Python3, not *Python2* unless you want to make your/my life difficult**. And one final time: **download Python 3.6** DO NOT download Python 2.7. Hope that's clear.  
+What's going to happen next? You'll download a file and open it, then click and follow along with the default installation parameters. This should be as quick and painless as installing iTunes.  
+
+- What did you just install? Probably a good thing to ask. Fortunately it's explained right on a tab from the page you just downloaded from - [see here](https://www.anaconda.com/what-is-anaconda/). If that doesn't help, think of what you just downloaded as three things: 
+1) A piece of software that *included* Python (we'll get to what Python is in a second) and many other useful programs
+2) A piece of software that allows you to download other software in future (this is often called a *package manager*)
+3) A piece of software that is free, constantly updated, and used by millions of people.   
+
+Question... why are you spending $$$ on textbooks when folks are providing this crap for free?
 
 ## Part 2 - Tiny install: 
 What to do: easy - just 
