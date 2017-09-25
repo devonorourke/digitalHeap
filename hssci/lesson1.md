@@ -2,22 +2,27 @@
 So recall that in the [introductory lesson](https://github.com/devonorourke/digitalHeap/blob/master/hssci/lesson0.md) we downloaded [Anaconda](https://www.anaconda.com/what-is-anaconda/), which contained [Python](https://www.python.org/about/gettingstarted/) as well as many other unnamed software packages. Basically, we downloaded some soft of nested dolls of software. As mentioned earlier, one other advantage of doing this big installation was that we could quickly manage future downloads of additional software we might want/need. And another reason was that many of those non-Python packages might be useful to us - both those installed with Anaconda as well as yet to be downloaded programs. To get our first lesson rolling we're going to do all of those things: start using base functions you've already downloaded, start using some programs you've downloaded but need to import (ex. [Jupyter Notebook](http://jupyter.readthedocs.io/en/latest/index.html)) and download something we don't (a program called [nglview](https://github.com/arose/nglview)).  
 
 You might be considering asking the following questions:  
-> 1) How many times are we going to be downloading software? Is that all this course is about?
+> 1) How many times are we going to be downloading software? Is that all this course is about?  
+
 Answer: You will download software routinely. This is not all this course is about.  
-> 2) Why do I want Jupyter Notebook?
+
+> 2) Why do I want Jupyter Notebook?  
+
 Answer: Better question! We're using this software because it's a digital notebook which lets you simultaneously write the code you want to perform a function, execute that code within the program, see the output of that code, **AND** let's you separate out all your code, output, and basic note taking into convenient blocks. It does a lot of useful stuff, okay?   
-> 3) I don't have any other questions... how do I do this so I can get to lunch?
+
+> 3) I don't have any other questions... how do I do this so I can get to lunch?  
+
 Answer: See below. And you can eat in lab for all I care.  
 
 # Welcome to your console
-Here's the thing - you're going to have to get at least a little bit familiar with a terminal emulator - a.k.a. console. This is the piece of software that will make your parents nod whimsically (or run fearfully). It's the super low-tech-looking (but not actually low tech!) piece of software on every computer that acts as the platform with which you can talk to your computer without clicking anything - just by typing. If you've never used it, it seems really strange. If you have used it before, it seems strangely amazing. However, depending on your OS (Operating System) of choice, you communicate with your console using different languages - in other words, 'speaking' with a Windows machine is executed differently than with a Mac. Here's the basics to consider:  
+Here's the thing - you're going to have to get at least a little bit familiar with a terminal emulator - a.k.a. console. This is the piece of software that will make your parents nod whimsically (or run fearfully). It's the super low-tech-looking (but not actually low tech!) piece of software on every computer that acts as the platform which you communicate directly to your computer without clicking anything - just by typing. If you've never used it, it seems really strange. If you have used it before, it seems strangely amazing. However, depending on your OS (Operating System) of choice, you communicate with your console using different languages - in other words, 'speaking' with a Windows machine is executed differently than with a Mac. Here's the basics to consider:  
 
 - Do you have a **Windows machine**? Things are going to be more difficult. In brief: we're going to need to work on this separately before you can move on. I'm going to write all conventions for a Unix OS platform, so it would be best to either [install a Linux distribution directly](https://msdn.microsoft.com/en-us/commandline/wsl/install_guide) if you have Windows 10, or perhaps just install a terminal emulator ([one example here](http://mobaxterm.mobatek.net/)) that contains some Unix-like commands needed to do what we're going to do.  
 - Do you have a **Linux machine**? Congrats, you're the weird kid. See instructions for Mac below. But you already knew that.  
 - Do you have a Mac machine? Sweet. Do two things:  
   - Click on that *Spotlight* search icon in the top right of your computer and look for a program called `Terminal`. Open that up. Now we can talk to the computer!  
 
-## Terminal - are we there yet? 
+# Terminal - are we there yet? 
 A stream of questions that might pop up in your head...  
 
 > Why did I just open up Terminal?  
@@ -45,7 +50,7 @@ So if you're keeping track at home, you've opened up a program that isn't Python
 
 It turns out `Terminal` is also a hugely useful piece of software to communicate lots of commands by itself (to keep with the above analogy, Terminal has it's own plane, and the one we're using is called `bash`). Before we get to using Python we're going to use Terminal's native language (`bash`) to do a variety of simple tasks. Just search online for "Terminal basics" and you'll find a million helpful guides [like this one](http://www.cs.virginia.edu/diochnos/tips/terminal/basics.html). In essence, most things you do with a mouse can be done at the command prompt, but many things done with the command line can't be done (at least quickly) with a mouse. Rather than bombard you with many useful (I'd argue essential) command line arguments all at once, we're going to stick to just a very few basics ones:  
 
-## Navigating the command line
+# Navigating the command line
 You know how when you open a window to look for some file you search through folders within folders within folders? Like how you can have a folder called "My Documents", and within that maybe multiple folders for each class? And how within that class you have perhaps other folders for each unit? And within whatever that unit folder is called you have things like a Word document, pictures, maybe a spreadsheet file, or a movie? Computers simplify this whole thing by boiling down everything into two things: **directories** or **files**. Directories are places where you store things. Files are everything that isn't a directory, which is to say things hold data or programs that can execute functions.  
 Why mention all this? Because when you're working within the `Terminal` program, you are essentially "in" one of those folders, and everything you do assumes that, by default, you are trying to do it in that very specific location. You can think of this "folders-in-folders-in-folders" structured as a tree - [see here for an example](http://dsl.org/cookbook/cookbook_8.html). With that tree structure in mind, let's get started moving around... 
 
@@ -117,29 +122,8 @@ mkdir chem_lessons
 ```
 Notice how a new folder named "chem_lessons" magically appeared? Well not magic - you told the computer to create a directory named that in that place - so the computer is just doing what it's told. And that's the whole point!  
 
-# Are we there yet?
-Now that you know how to use an execute `cd`, `ls`, `pwd`, and `mkdir` we can go about the business of executing the last (and most important) step of today's work: downloading the `rdkit` program. Like before, we're conducting this business within `Terminal`, and like before, we're going to start in our home directory. I'm going to show you three different ways to do the same thing to get back to that spot (you only need to do one of the following):  
-```
-cd          # super basic, super fast
-cd $HOME    # oohhh, what's that fancy environmental variable thing?
-cd ~        # it's called a tilda in case you were wondering, and it's how you often define the path for your home directory
-```
-Remember you can check you're in the right spot with `pwd`.  
-
-Let's now use `Anaconda's` software to execute a specific task: download another piece of software ([chemlab](http://chemlab.readthedocs.io/en/latest/installation.html). In one remarkably simple line of code, this will:  
-a) download the most recent version of the tool
-b) download any dependent programs this tool requires that you might not have
-c) perform version-compatibility among those various programs to make sure nothing breaks
-d) put it in a place on your computer where it will work seamlessly so you can call it up from any position on the command line. 
-
-```
-http://chemlab.readthedocs.io/en/latest/installation.html
-```
-That's it. Didn't I tell you Anaconda was awesome?  
-
-
-# Finally - really - to Jupyter Notebook!
-The last thing we'll to today is call the `Juptyer Notebook` program up (now that you know how to move about the command line!). It's really simple:
+# Are we there yet? Using Jupyter Notebook
+Now that you know how to use an execute `cd`, `ls`, `pwd`, and `mkdir` we can go about the business of executing the main point of today's work: using `Jupyter Notebook`. It's really simple:
 ```
 jupyter notebook
 ```
@@ -167,11 +151,11 @@ This new web page is called the *Notebook Dashboard*, you should see a pretty ba
 
 > So is this Juypter Notebook?  
 
-No.  
+No, not really.  
 
 > What?!~!  
 
-Patience. Almost there. Read below.  
+Patience. You're just one click away! This page is just the spot you can *create* a new notebook from - see below.
 
 ## Creating a new notebook
 See [this link](http://jupyter-notebook.readthedocs.io/en/latest/examples/Notebook/Notebook%20Basics.html) for helpful documentation (ie. information about how to use the program) about the basic functionality of `Jupyter`. From the *Notebook Dashboard*, click the `New` icon in the top right corner of the browser, then select `Python3` from the few options (it's the only Notebook option, but there are also simple files like `text file`, `folder`, and `terminal` you could select - this is another way you can create a new folder/file within `Jupyter`). Once you click on `Python3` a new window should open - your first Jupyter Notebook!  You can then name this notebook whatever you like - I'm going to call it "**lesson1**".  
@@ -217,12 +201,13 @@ Great, now let's try that last kind of cell type - Raw NBConvert. Paste that sam
 Something along these lines:
 <img src="https://raw.githubusercontent.com/devonorourke/digitalHeap/master/hssci/images/hssci-l1-scap3.gif" />  
 
-# Super brief intro to Python using the *code* type of cell
-Let's dive into using the *code* type of cells to do the two main things we'll be doing over and over agin: 
-- performing basic calculations
-- importing programs to perform not so basic calculations  
+## Super brief intro to Python using the *code* type of cell
+Let's dive into using the *code* type of cells to do the three main things we'll be doing over and over agin: 
+- performing calculations
+- working with functions to produce graphics
+- importing programs to perform myriad output outside of the Anaconda base programs (of which there were > 700!)
 
-## Basic calculations
+### Basic calculations
 If your head isn't spinning yet, awesome. If it is, don't worry (it probably should be). In just two short lessons you've had to learn how to speak in three computer languages (`bash`, `markdown`, and now `Python`), navigate how to click through a bunch of new programs (`Jupyter`, `Terminal`), and somehow we haven't even got to the chemistry - but we will (sort of) right now!  
 
 I say "sort of" because what we're about to do has nothing to do with *chemistry* at all. It has everything to do with *language* - specifically, the language of Python. What we need to do first is learn how to speak in Python. Like any new language we're going to start with basic parts of speach and build from there. For today's lesson we'll introduce a few new terms (**in bold**) which aren't really Python specific as much as computer-programming generic:  
@@ -260,7 +245,7 @@ I tried executing a **variable** called `sqrt` to my print statement. But Python
 
 I'm lazy, so we're going with option 2. As an added benefit, it illustrates another thing we'll routinely do: importing another program.  
 
-## Importing modules
+## Importing modules you already have
 Python is a language that has its own core set of programs - termed **modules** - which perform a diverse set of tasks. Some are highly specified and short, others are highly specified and enormous, and others still are broadly applicable to a lot of tasks. What we're going to need to do first is import a program that does square rooting. How do we do that? Easy, that's how.  
 
 We'll need to do this in an empty `code` block:  
@@ -280,9 +265,10 @@ Boom! You can square root to your heart's content. So what did we just learn? We
 2. There's this thing called `math` which is a program that lets me do square root calculations.  
 3. There's this weird astersik `*` which I don't understand yet. *Don't worry. It's called a wild card. We'll talk about [regular expressions](https://docs.python.org/3/library/re.html) later.*  
 
-Okay, so what about importing something that doesn't do math. Does Jupyter Notebook let me do something that my TI-89 can't (or iPhone, or whatever)? Yup. [More than you care to imagine](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks). And that leaves us with one final task - remember way, way back at the beginning of this lesson we talked about downloading some program called `nglview`? Maybe not. But it's there, I promise. How do we do that? Easy - but you have to go back to your `Terminal`.  
+Okay, so is Jupyter Notebook just a glorified calculator? What about importing something that doesn't do math. Does Jupyter Notebook let me do something that my TI-89 can't (or iPhone, or whatever)? Yup. [More than you care to imagine](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks). And that leaves us with our second to last task for today - remember way, way back at the beginning of this lesson we talked about downloading some program called `nglview`? Let's do that next.
 
-From the command line, type:
+## Importing modules you don't yet have
+Thanks to Anaconda, this is a fairly simple task to complete - but you have to go back to your `Terminal`.  From the command line, type:
 ```
 cd ~
 conda install nglview -c bioconda
@@ -291,17 +277,49 @@ jupyter-nbextension enable nglview --py --sys-prefix
 
 ## If you happen to get a message "Proceed ([y]/n)?" just type "y" then hit 'enter'
 ```
+In just those few short lines of code you have:
+a) downloaded the most recent version of the tool(s)  
+b) downloaded all dependent programs this tool requires that you might not have  
+c) perform version-compatibility among those various programs to make sure nothing breaks  
+d) put it in a place on your computer where it will work seamlessly so you can call it up from any position on the command line.  
 
-Nice and easy; thanks Conda. Now we have this program installed but we haven't yet loaded the program; that is, it's available to us, but we haven't told our Jupyter Notebook (via Python) to go and make it available. Just like how we had the `math` module available to us but needed to first type `import` to get it working. Let's do that with `nglview` and see what's under the hood:  
+Nice and easy thanks to Conda. Now we have this program installed but we haven't yet loaded the program; that is, it's available to us, but we haven't told our Jupyter Notebook (via Python) to go and make it available. Just like how we had the `math` module available to us but needed to first type `import` to get it working. Let's do that with `nglview` and see what's under the hood - in a new cell type and run:  
 
 ```
 import nglview
-view = nglview.show_pdbid("3pqr")  # load "3pqr" from RCSB PDB and display viewer widget
+view = nglview.show_pdbid("3pqr")
 view
 ```
 
-What are you seeing here? As [explained on their example page](https://github.com/arose/nglview#example) what you're seeing is a visualization of a complex arrangement of molecules - in fact, this is a [rhodhopsin protein](http://www.rcsb.org/pdb/explore.do?structureId=3pqr) which is involved in making eyesight possible.
+What are you seeing here? As [explained on their example page](https://github.com/arose/nglview#example) what you're seeing is a visualization of a complex arrangement of molecules - in fact, this is a [rhodhopsin protein](http://www.rcsb.org/pdb/explore.do?structureId=3pqr) which is involved in making eyesight possible. Pretty crazy right? What did that code do? Essentially it does just two things:  
+- `import nglview` finds the program you want to run and makes it available for use
+- `view = nglview.show_pbid("3pqr")` loads the protein named **3pqr** by downloading it from the Royal Soceity's Protein Database. If you check out RCSB's site you could [search for any protein](http://www.rcsb.org/pdb/home/home.do#Category-search) you're interested in and immediately view it in your notebook - pretty powerful stuff. For example, try substituting the `3pqr` term with `1bpx`; any idea what that depicts? 
 
+So it turns out that your Notebook isn't just a calculator. It also can connect with the internet, download other programs, other data sets, and much, much more. To give you one other flavor of the kind of thing you might find useful in your notebook, lets call up a program installed with your Anaconda distribution and make a quick graph.  
+
+## Graphing in Jupyter
+There is so much more that we need to discuss, but to just give you a sense of how quickly you can generate a nice little figure try executing the following few lines of code in your Notebook:
+```
+import matplotlib.pyplot as plt
+import numpy as np
+```
+Run that code. Notice that nothing happens. Why? Because all you've done is `import` the needed programs which were already part of the Anaconda install (these are `matplotlib` and `numpy` in case you're wondering). Once those programs are ready to be used, let's actually generate a figure with this little code (*which you can and should manipulate to see how things change*):
+```
+x = np.linspace(0, 3*np.pi, 500)
+plt.plot(x, np.sin(x**2))
+plt.title('Do I know anything about sine functions? Sure I do');
+```
+
+# End Notes
+We're done for today - awesome work! To close out of your Jupyter Notebook you'll need to do two things:
+- Save the notebook by clicking the 'save' icon in the top left of your active notebook
+- Go to the *Notebook dashboard* tab and click the empty box next to your active notebook, then select "shut down".  
+
+Congrats - you covered a lot of ground in just a few hours. 
+- We've worked through using the `Terminal` program to download big and small packages, create folders, and move about the computer without ever clicking a mouse once. We'll continue to expand our `bash` language used in the `Terminal` program as we continue in future lessons.  
+- You've launced your first Jupyter Notebook and learned some of it's basic functionality in using the different cell types. - You executed a variety of different code using the Python programming language (specifically the Python3 language). 
+
+We're going to dig into many other tools in subsequent lessons, but you have covered probably the most novel portions of the work already. In other words, the hardest stuff is usually the most foreign, and from hereon out things should get more and more familiar. Moreover, future lessons will also be more specific and target specific programs to do specific things. So stay excited - we're just getting started!
 
 
 
