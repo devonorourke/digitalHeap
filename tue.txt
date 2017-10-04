@@ -1,0 +1,47 @@
+#build bwa index from horse fasta
+#align bat reference fasta to horse index
+#identify reads in x-chromosome and y-chromosome
+#identify positions of reads
+#filter out SNPs that fall in those reads
+
+
+#making index from horse (within /leo/devon/projects/batgenome/nonbatfasta):
+bwa index horse.fa.gz
+
+#align bat reference to horse:
+bwa mem \
+/leo/devon/projects/batgenome/nonbatfasta/horse.fa.gz \
+/leo/devon/projects/batgenome/FastaBat/mylu.fa > \
+/leo/devon/projects/batgenome/refAligns2nonBat/myluRef_horse.sam
+
+#convert sam to bam
+
+#pull out .bam reads associated with X-chromosome
+
+#
+
+
+........
+
+#what about pulling out just X and Y chromosomes from multiple species (cow, horse, sheep, pig) and creating a fasta of those sequences, then creating an index of those, then align MYLU to that?
+
+
+IDEA:
+once you get the genomes from your bats back... can you look at core/unique gene regions like in Roary with bacteria?
+
+
+ftp://ftp.ensembl.org/pub/release-89/fasta/bos_taurus/dna/Bos_taurus.UMD3.1.dna.chromosome.X.fa.gz
+
+
+#look up ScriptSeq v2 from (now) Illumina (frm. Epicetner)
+...want to use a targeted enrichment first
+
+#tandy warnow
+"scaling statistical multiple sequence alignment to large datasets" (paper BMC Genomics)
+
+
+
+.....
+
+#MaFFT
+##install

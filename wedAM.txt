@@ -1,0 +1,36 @@
+Sue and Big cats in CA
+# do you care to look at genome rearrangements rather than SNPs?
+# how do you quantify these changes in a phylogeny?
+# how do you (A) detect recombination from sequence data; and (B) how does a virus actually facilitate recombination?
+
+4944567884
+  10000116
+
+cycles going to take about 6.5 hours
+
+
+########
+is it possible to create own matrix? say non-symmetric? (ex. penalize AT --> CG less than CG --> AG)
+is it possible to define different matricies? (ex. if you see pairs or triplets of errors, perhaps those are likely due to sequencing error and should be less costly)
+
+when you have 3 nodes in a tree... or 2 nodes... or N nodes....
+how are you splitting up the number of site Likelihood scores? where do you break it up? is it at every node?
+how do you fit that back into an alignment?
+... what's the relationship between:
+- the number of nodes
+- the number of positions in an alignment
+- the number of individuals
+
+
+among-side rate heterogenerity: 3 options
+looks for invariant sites...may be a functional/structural component that is under selection, so you can't change
+looks for site-specific rates... look at rate changes on a site-by-site basis
+looks at gamma model which uses an alpha parameter (which is the shape of the distribution) to model the distribution of rate change
+	- for this last one, a big alpha == normal distribution of rate changes...
+	- for small alpha (say 0.5), then basically some sites change extremely fast, some sites change very slowly
+	
+among the models:
+GTR = general time reversible == each site changes independently
+I = some sites are invariant
+gamma = weird R greek symbol	
+
