@@ -29,5 +29,10 @@ Your identification has been saved in pinky.
 ```
 ssh-copy-id myname@theserver
 ```
-
 And volia! Every time I log in in the future, no more password entry. 
+
+If you named the key instead of using the default prompt, the program will look for unused keys and use what it finds (so if you do this one at a time you're fine). However you can also pass a `-n` flag to specify the key you want to use for that server. Thus, you could have used:
+
+```
+ssh-copy-id -n pinky myname@theserver
+```
