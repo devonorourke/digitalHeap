@@ -12,9 +12,17 @@ Their suggestion worked in three steps:
 brew install ssh-copy-id
 ```
 
-2. With that program installed, create the "key" and accept the default prompts (as I didn't see any reason to change the filename it provided):  
+2. With that program installed, create the "key" and accept the default prompts. Note, however, this only works if you have a single key you want to save; because I had multiple keys, I started naming them by the server they were assigned to:  
 ```
 ssh-keygen -t rsa
+```
+
+If you wanted to name the key (in the following example, the server name is `pinky`, the prompts would look like this after you entered the above command. 
+```
+Enter file in which to save the key (/Users/do/.ssh/id_rsa): pinky
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in pinky.
 ```
 
 3. Copy the key to the server:  
